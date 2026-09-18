@@ -1,0 +1,6 @@
+docling>=2.50
+ollama>=0.6
+openai>=2.21
+pydantic>=2.9
+PyYAML>=6.0
+pytest>=8.0

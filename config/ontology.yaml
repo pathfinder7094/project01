@@ -1,0 +1,56 @@
+version: 2
+
+entities:
+  concept:
+    description: "General technical concept or idea"
+  entity:
+    description: "Named technology, model, organization, method, dataset, person, or system"
+  source:
+    description: "A source document represented in wiki/sources"
+  comparison:
+    description: "Structured comparison between two or more knowledge objects"
+
+relations:
+  uses:
+    source: [concept, entity]
+    target: [concept, entity]
+
+  depends_on:
+    source: [concept, entity]
+    target: [concept, entity]
+
+  contradicts:
+    source: [concept, entity]
+    target: [concept, entity]
+
+  supports:
+    source: [concept, entity]
+    target: [concept, entity]
+
+  implements:
+    source: [entity, concept]
+    target: [concept, entity]
+
+  extends:
+    source: [concept, entity]
+    target: [concept, entity]
+
+  related_to:
+    source: [concept, entity, comparison]
+    target: [concept, entity, comparison]
+
+  part_of:
+    source: [concept, entity]
+    target: [concept, entity]
+
+  instance_of:
+    source: [entity]
+    target: [concept, entity]
+
+  compares_with:
+    source: [concept, entity, comparison]
+    target: [concept, entity, comparison]
+
+  supersedes:
+    source: [concept, entity]
+    target: [concept, entity]

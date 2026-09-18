@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "local-llm-wiki-pipeline"
+version = "0.1.0"
+description = "Docling + Ollama + Obsidian WikiLLM pipeline and benchmark"
+requires-python = ">=3.11"
+dependencies = [
+  "docling>=2.50",
+  "ollama>=0.6",
+  "openai>=2.21",
+  "pydantic>=2.9",
+  "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+include = ["app*"]

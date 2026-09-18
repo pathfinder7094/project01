@@ -1,0 +1,93 @@
+# =========================
+# Secrets / runtime config
+# =========================
+.env
+.env.*
+!.env.example
+
+config/loop.env
+config/runtime.env
+config/*.local.env
+
+# Keep public templates
+!config/runtime.env.example
+!config/*.env.example
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# =========================
+# Generated application output
+# =========================
+app/outputs/*
+!app/outputs/.gitkeep
+
+# Benchmark/runtime results
+llmwiki/benchmark-runs/
+llmwiki/benchmarks/
+
+# =========================
+# Local / raw source data
+# =========================
+llmwiki/raw/*
+!llmwiki/raw/articles/.gitkeep
+!llmwiki/raw/papers/.gitkeep
+!llmwiki/raw/repos/.gitkeep
+!llmwiki/raw/data/.gitkeep
+!llmwiki/raw/images/.gitkeep
+!llmwiki/raw/assets/.gitkeep
+
+# =========================
+# Obsidian local state
+# =========================
+llmwiki/.obsidian/workspace.json
+llmwiki/.obsidian/workspace-mobile.json
+llmwiki/.obsidian/cache
+llmwiki/.trash/
+
+# =========================
+# Logs / temporary files
+# =========================
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# =========================
+# OS / IDE
+# =========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# =========================
+# Local archives / exports
+# =========================
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# =========================
+# Sensitive local documents
+# =========================
+# Raw PDFs are excluded through llmwiki/raw/* above.
+# Add more private paths here if required.

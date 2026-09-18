@@ -1,0 +1,20 @@
+{
+  "chunk_id": "REPLACE-WITH-REAL-CHUNK-UUID",
+  "expected_concepts": [
+    "LLMOps",
+    "Model Monitoring",
+    "Model Evaluation"
+  ],
+  "expected_relations": [
+    {
+      "source": "LLMOps",
+      "relation": "includes",
+      "target": "Model Monitoring"
+    },
+    {
+      "source": "LLMOps",
+      "relation": "includes",
+      "target": "Model Evaluation"
+    }
+  ]
+}

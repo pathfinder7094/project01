@@ -1,0 +1,6 @@
+# OpenAI benchmark models.
+# Format: MODEL:API_KEY_ENV
+# The API key value belongs in config/loop.env; this file stores only the environment-variable name.
+# OpenAI models run before config/ollama-models.txt.
+
+gpt-5.6-luna:OPENAI_API_KEY

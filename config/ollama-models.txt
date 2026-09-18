@@ -1,0 +1,6 @@
+# Default / resume-safe Ollama profile.
+# One model per line. Existing concurrency=1 checkpoints remain reusable.
+# For a new GPU-tuning experiment use config/ollama-models.gpu-tuned.txt.
+qwen3:4b-instruct-2507-q4_K_M
+gemma3:4b-it-q4_K_M
+qwen3.5:4b
