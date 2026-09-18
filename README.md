@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Local WikiLLM v4 — Markdown-first + UUID + OpenAI/Ollama + Docling
 
 프로젝트의 목표는 **모델을 학습시키는 것보다 먼저, raw → distill → wiki 파이프라인을 안정적으로 완성하는 것**이다.
@@ -383,3 +384,7 @@ llmwiki/benchmark-runs/<run_id>/<model-slug>/wiki/
 ```
 
 The canonical `llmwiki/wiki/` is not modified by benchmark model outputs. Benchmark reports under `llmwiki/wiki/benchmarks/` include both runtime metrics and structural Wiki metrics. See `docs/BENCHMARK_WIKI_ARCHITECTURE.md`.
+=======
+# project01
+프로젝트 실습과 과제 내용
+>>>>>>> 60883cbe88d2d09e60bc85d68a90ad030bf663cb
